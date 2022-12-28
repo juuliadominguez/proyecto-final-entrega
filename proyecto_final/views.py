@@ -14,6 +14,9 @@ def index(request):
     posts = Post.objects.order_by("-id").all()
     return render(request, "proyecto_final/index.html", {"posts": posts})
 
+def about(request):
+    return render(request, "proyecto_final/about.html")
+
 class PostDetalle(DetailView):
     model= Post
 

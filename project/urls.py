@@ -18,12 +18,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from django.contrib.admin.views.decorators import staff_member_required
-from proyecto_final.views import (index, PostListar, PostCrear, PostBorrar, PostActualizar, PostDetalle,
+from proyecto_final.views import (index, about, PostListar, PostCrear, PostBorrar, PostActualizar, PostDetalle,
                                UserSignUp, UserLogin, UserLogout, AvatarActualizar, UserActualizar, 
                                MensajeCrear, MensajeListar, MensajeDetalle)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('proyecto-final/about/', about, name="proyecto-final-about" ),
     path('proyecto-final/', index, name="proyecto-final-index"),
     path('proyecto-final/<int:pk>/detalle/', PostDetalle.as_view(), name="proyecto-final-detalle"),
     path('proyecto-final/listar/', PostListar.as_view(), name="proyecto-final-listar"),
