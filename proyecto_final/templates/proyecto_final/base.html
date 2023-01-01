@@ -29,7 +29,7 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-index' %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-about' %}">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-mensaje-crear' %}">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" aria-current="page" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Tutorial</a></li>
                         {% if user.is_authenticated %}
                             <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-listar' %}">Admin Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-logout' %}">Salir</a></li>
@@ -45,8 +45,8 @@
         <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+                    <h1 class="fw-bolder">Bienvenido a mi proyecto final!</h1>
+                    <p class="lead mb-0">Un blog con algunos viajes que hice</p>
                 </div>
             </div>
         </header>
@@ -55,7 +55,7 @@
     
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Final-JD</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
