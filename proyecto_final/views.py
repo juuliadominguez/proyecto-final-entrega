@@ -41,13 +41,13 @@ class PostActualizar(LoginRequiredMixin, UpdateView):
 class UserSignUp(CreateView):
     form_class= UsuarioForm
     template_name= 'registration/signup.html'
-    success_url= reverse_lazy('proyecto-final-listar')
+    success_url= reverse_lazy('proyecto-final-index')
 
 class UserLogin(LoginView):
-    next_page= reverse_lazy('proyecto-final-listar')
+    next_page= reverse_lazy('proyecto-final-index')
 
 class UserLogout(LogoutView):
-    next_page= reverse_lazy('proyecto-final-listar')
+    next_page= reverse_lazy('proyecto-final-index')
 
 class AvatarActualizar(UpdateView):
     model = Avatar

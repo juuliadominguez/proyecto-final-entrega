@@ -16,7 +16,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">
+                <a class="navbar-brand">
                     <img src="{{user.avatar.imagen.url}}" height="64">
                     {% if user.is_authenticated %}
                         Hola {{user}} 
@@ -31,9 +31,9 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-mensaje-crear' %}">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" target="_blank" aria-current="page" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Tutorial</a></li>
                         {% if user.is_authenticated %}
-                            <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-listar' %}">Admin Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-listar' %}">Lista</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-logout' %}">Salir</a></li>
-                            {% else %}
+                        {% else %}
                             <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-signup' %}">Registrarme</a></li>                        
                             <li class="nav-item"><a class="nav-link" href="{% url 'proyecto-final-login' %}">Ingresar</a></li>
                         {% endif %}
